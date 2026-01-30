@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Changer</title>
+</head>
+<body>
+
+  <h1>Color Changer App</h1>
+  <p>Click the button to change background color!</p>
+
+  <button onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+            var r = Math.floor(Math.random() * 256);
+      var g = Math.floor(Math.random() * 256);
+      var b = Math.floor(Math.random() * 256);
+      var color = "rgb(" + r + "," + g + "," + b + ")";
+      
+            document.body.style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>
